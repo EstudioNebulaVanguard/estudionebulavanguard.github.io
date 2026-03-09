@@ -181,6 +181,15 @@ z-index:0;
 filter: blur(40px);
 }
 
+.logo img{
+height:42px;
+transition:transform .3s ease;
+}
+
+.logo img:hover{
+transform:scale(1.08);
+}
+
 /* --- Layout Grid --- */
 .grid {
     display: grid;
