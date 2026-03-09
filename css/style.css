@@ -391,3 +391,17 @@ z-index:2;
     .stats { justify-content: center; }
     .portfolio-links { flex-direction: column; align-items: center; }
 }
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+}
+
+.hero{
+position:relative;
+}
+
+.hero{
+padding-top:120px;
+}
+
