@@ -80,7 +80,7 @@ justify-content:space-between;
 align-items:center;
 }
 
-/* --- Logo --- */
+/* --- Logo Navbar --- */
 
 .logo-link{
 display:flex;
@@ -89,24 +89,26 @@ gap:10px;
 }
 
 .logo-img{
-height:36px;
+height:32px;
 width:auto;
-transition:transform .3s ease;
-}
-
-.logo-img:hover{
-transform:scale(1.05);
 }
 
 .logo-text{
-font-weight:700;
 font-size:14px;
+font-weight:600;
 letter-spacing:1px;
-color:var(--text-primary);
+color:#ffffff;
 }
 
 .logo-text strong{
+font-weight:700;
+color:#ffffff;
+}
+
+.logo-accent{
 color:var(--accent-color);
+font-weight:700;
+margin-left:2px;
 }
 
 /* --- Nav Links --- */
