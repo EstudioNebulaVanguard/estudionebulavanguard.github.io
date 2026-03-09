@@ -1,5 +1,6 @@
 /* --- Variables & Reset --- */
 :root{
+
 --bg:#020617;
 --bg-color:#0a0a0a;
 --bg-alt:#121212;
@@ -14,6 +15,7 @@
 --glass:rgba(255,255,255,0.03);
 
 --transition:all .3s ease;
+
 }
 
 *{
@@ -26,12 +28,13 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body{
+background: var(--bg);
 background: radial-gradient(circle at top,#1f2937,#020617);
-    color: var(--text-primary);
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
+color: var(--text-primary);
+font-family: 'Inter', sans-serif;
+line-height: 1.6;
+overflow-x: hidden;
 }
 
 ul { list-style: none; }
@@ -63,6 +66,10 @@ img { max-width: 100%; display: block; }
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.navbar.scrolled{
+background: rgba(10,10,10,0.95);
+backdrop-filter: blur(20px);
 }
 
 .logo {
@@ -164,13 +171,14 @@ z-index:2;
 
 .hero-gradient{
 position:absolute;
-width:600px;
-height:600px;
-background:radial-gradient(circle,rgba(99,102,241,.2),transparent);
-right:-200px;
-top:200px;
+width:500px;
+height:500px;
+background:radial-gradient(circle,rgba(99,102,241,.25),transparent);
+right:-150px;
+top:150px;
 pointer-events:none;
 z-index:0;
+filter: blur(40px);
 }
 
 /* --- Layout Grid --- */
