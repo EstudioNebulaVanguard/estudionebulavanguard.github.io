@@ -122,14 +122,15 @@ img { max-width: 100%; display: block; }
 
 /* --- Hero Section --- */
 .hero{
-height:100vh;
+min-height:100vh;
 display:flex;
 align-items:center;
+padding-top:120px;
 position:relative;
-z-index:1;
 }
 
 .hero-content{
+max-width:700px;
 position:relative;
 z-index:2;
 }
@@ -159,14 +160,15 @@ z-index:2;
     gap: 1.5rem;
 }
 
-.hero-gradient {
-    position: absolute;
-    top: 50%;
-    right: -10%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
-    z-index: -1;
+.hero-gradient{
+position:absolute;
+width:600px;
+height:600px;
+background:radial-gradient(circle,rgba(99,102,241,.2),transparent);
+right:-200px;
+top:200px;
+pointer-events:none;
+z-index:0;
 }
 
 /* --- Layout Grid --- */
@@ -394,17 +396,3 @@ z-index:2;
     .stats { justify-content: center; }
     .portfolio-links { flex-direction: column; align-items: center; }
 }
-.hero-content{
-position:relative;
-z-index:2;
-max-width:700px;
-}
-
-.hero{
-position:relative;
-}
-
-.hero{
-padding-top:120px;
-}
-
