@@ -1,23 +1,25 @@
 /* --- Variables & Reset --- */
 :root{
---bg:#0a0a0a;
---bg2:#121212;
---text:#f8fafc;
---muted:#94a3b8;
---accent:#6366f1;
+--bg:#020617;
+--bg-color:#0a0a0a;
+--bg-alt:#121212;
+
+--text-primary:#f8fafc;
+--text-secondary:#94a3b8;
+
+--accent-color:#6366f1;
+--accent-hover:#4f46e5;
+
+--border:rgba(255,255,255,0.08);
+--glass:rgba(255,255,255,0.03);
+
+--transition:all .3s ease;
 }
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-}
-
-body{
-font-family:'Inter',sans-serif;
-background:radial-gradient(circle at top,#111827,#050505);
-color:var(--text);
-line-height:1.6;
 }
 
 html {
@@ -189,15 +191,20 @@ z-index:0;
     box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
-.stats {
-    display: flex;
-    gap: 3rem;
-    margin-top: 2.5rem;
+.stats{
+display:flex;
+gap:3rem;
+margin-top:2.5rem;
 }
 
-.stat-item h3 {
-    font-size: 2.5rem;
-    color: var(--accent-color);
+.stat-item h3{
+font-size:2.5rem;
+color:var(--accent-color);
+}
+
+.stat-item p{
+color:var(--text-secondary);
+font-size:.9rem;
 }
 
 /* --- Services --- */
