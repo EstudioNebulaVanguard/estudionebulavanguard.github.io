@@ -525,3 +525,14 @@ align-items:center;
 }
 
 }
+@media (max-width:768px){
+
+.logo-text{
+font-size:12px;
+}
+
+.logo-img{
+height:28px;
+}
+
+}
