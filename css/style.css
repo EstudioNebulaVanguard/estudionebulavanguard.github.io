@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    background-color: var(--bg-color);
+background: radial-gradient(circle at top,#1f2937,#020617);
     color: var(--text-primary);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -118,16 +118,17 @@ img { max-width: 100%; display: block; }
 }
 
 /* --- Hero Section --- */
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+position:relative;
+z-index:1;
 }
 
-.hero-content {
-    max-width: 800px;
+.hero-content{
+position:relative;
+z-index:2;
 }
 
 .hero h1 {
