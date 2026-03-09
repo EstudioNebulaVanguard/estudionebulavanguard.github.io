@@ -467,3 +467,24 @@ margin-top:2rem;
 }
 
 }
+.logo-link{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-img{
+height:36px;
+width:auto;
+}
+
+.logo-text{
+font-weight:700;
+font-size:14px;
+letter-spacing:1px;
+color:var(--text-primary);
+}
+
+.logo-text strong{
+color:var(--accent-color);
+}
