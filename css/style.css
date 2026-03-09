@@ -81,6 +81,14 @@ backdrop-filter: blur(20px);
 .logo span {
     color: var(--accent-color);
 }
+.logo-img{
+height:45px;
+transition:transform .3s ease;
+}
+
+.logo-img:hover{
+transform:scale(1.05);
+}
 
 .nav-links {
     display: flex;
