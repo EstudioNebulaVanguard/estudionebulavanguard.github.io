@@ -12,6 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Cambiar estilo del navbar al hacer scroll
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+if (window.scrollY > 50) {
+navbar.classList.add("scrolled");
+} else {
+navbar.classList.remove("scrolled");
+}
+
+});
+
     // --- Mobile Menu Toggle (Simplified) ---
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
